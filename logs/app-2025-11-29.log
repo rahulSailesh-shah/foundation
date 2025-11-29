@@ -1,0 +1,19 @@
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:27","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:53:24-07:00"}
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:31","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:55:55-07:00"}
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:31","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:57:17-07:00"}
+{"level":"error","service":"test-service","msg":"Error","file":"main.go:32","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:57:17-07:00"}
+{"level":"warn","service":"test-service","msg":"Warn","file":"main.go:33","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:57:17-07:00"}
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:32","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:57:46-07:00"}
+{"level":"error","service":"test-service","msg":"Error","file":"main.go:33","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:57:46-07:00"}
+{"level":"warn","service":"test-service","msg":"Warn","file":"main.go:34","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:57:46-07:00"}
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:32","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:59:11-07:00"}
+{"level":"warn","service":"test-service","msg":"Warn","file":"main.go:33","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:59:11-07:00"}
+{"level":"error","service":"test-service","msg":"Error with error","file":"main.go:34","error":{},"key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:59:11-07:00"}
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:32","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:59:24-07:00"}
+{"level":"warn","service":"test-service","msg":"Warn","file":"main.go:33","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:59:24-07:00"}
+{"level":"error","service":"test-service","msg":"Error with error","file":"main.go:34","error":"test error","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T04:59:24-07:00"}
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:30","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T05:00:00-07:00"}
+{"level":"info","service":"test-service","msg":"Message","file":"main.go:31","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T05:00:50-07:00"}
+{"level":"warn","service":"test-service","msg":"Warn","file":"main.go:32","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T05:00:50-07:00"}
+{"level":"error","service":"test-service","msg":"Error with error","file":"main.go:33","error":"test error","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T05:00:50-07:00"}
+{"level":"debug","service":"test-service","msg":"Debug","file":"main.go:34","key1":"value1","key2":"value2","trace_id":"test-trace-id","time":"2025-11-29T05:00:50-07:00"}
