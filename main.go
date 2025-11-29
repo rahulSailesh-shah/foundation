@@ -27,6 +27,10 @@ func main() {
 	}
 
 	log := logger.NewLogger(logConfig)
+	log.Info(context.Background(), "Message", "key1", "value1", "key2", "value2")
+	log.Error(context.Background(), "Error", "key1", "value1", "key2", "value2")
+	log.Warn(context.Background(), "Warn", "key1", "value1", "key2", "value2")
+	log.Debug(context.Background(), "Debug", "key1", "value1", "key2", "value2")
 	if err := log.Close(); err != nil {
 		panic(err)
 	}
