@@ -60,8 +60,8 @@ func (a *App) EnableCORS(origins []string) {
 }
 
 func (a *App) HandlerFunc(method string, group string, path string, handler HandlerFunc, mw ...MidFunc) {
-	mwChain := NewChain(append(a.mw, mw...)...)
-	handler = mwChain.Then(handler)
+	handler = wrapMiddleware(mw, handler)
+	handler = wrapMiddleware(a.mw, handler)
 
 	h := func(w http.ResponseWriter, r *http.Request) {
 		// TODO: Set tracing span for request

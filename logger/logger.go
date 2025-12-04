@@ -6,7 +6,6 @@ import (
 	"path/filepath"
 	"runtime"
 	"strconv"
-	"sync"
 
 	"github.com/rs/zerolog"
 )
@@ -23,7 +22,6 @@ type Logger struct {
 	eventHandlers map[Level]EventFn
 	handlers      []io.WriteCloser
 	traceIDFn     func(ctx context.Context) string
-	wg            sync.WaitGroup
 }
 
 func NewLogger(cfg Config) *Logger {
@@ -100,7 +98,6 @@ func (l *Logger) log(ctx context.Context, level Level, caller int, message strin
 }
 
 func (l *Logger) Close() error {
-	l.wg.Wait()
 	for _, handler := range l.handlers {
 		if err := handler.Close(); err != nil {
 			return err

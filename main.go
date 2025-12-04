@@ -16,13 +16,11 @@ func main() {
 		return "test-trace-id"
 	}
 
-	fileWriter := logger.NewFileWriter("logs")
 	prettyLog := zerolog.ConsoleWriter{Out: os.Stderr, TimeFormat: time.RFC3339}
-
 	logConfig := logger.Config{
 		MinLevel:  logger.LevelDebug,
 		Service:   "test-service",
-		Handlers:  []io.WriteCloser{prettyLog, fileWriter},
+		Handlers:  []io.WriteCloser{prettyLog},
 		TraceIDFn: traceIDFn,
 	}
 

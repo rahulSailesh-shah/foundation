@@ -1,5 +1,4 @@
-// logger/transports/cloudwatch.go
-package logger
+package transports
 
 import (
 	"context"
